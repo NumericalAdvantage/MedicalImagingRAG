@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydicom
+monai
+torch
+sentence-transformers
+faiss-cpu
+requests
+torchvision
+transformers
+medclip
+pillow
+python-multipart
+open_clip_torch
+pylibjpeg
+pylibjpeg-libjpeg
+pylibjpeg-openjpeg

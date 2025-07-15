@@ -1,0 +1,53 @@
+
+services:
+  rag-api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./embeddings:/app/embeddings
+      - ./data:/app/data
+      - ./model_cache/huggingface:/root/.cache/huggingface
+      - ./model_cache/torch:/root/.cache/torch
+      - ./pip_cache:/root/.cache/pip           # Persist pip cache
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HUGGINGFACE_HUB_TOKEN=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
+      - TEXT_EMBED_MODEL=pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb
+    depends_on:
+      - ollama
+
+  rag-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./pip_cache:/root/.cache/pip           # Persist pip cache
+      - ./data:/app/data                       # Mount data directory for DICOM access
+    depends_on:
+      - rag-api
+
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_MODEL=llama2:7b-chat
+
+volumes:
+  qdrant_data:
+  ollama_data:
+

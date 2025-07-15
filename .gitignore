@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+.hugg/
+.hugg_venv/
+.hugg_env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data and models (do not version large or sensitive files)
+data/
+embeddings/
+model_cache/
+pip_cache/
+*.dcm
+
+# Streamlit and logs
+.streamlit/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.sock
+
+# Test outputs
+htmlcov/
+.coverage
+.cache/
+
+# Misc
+*.swp 
