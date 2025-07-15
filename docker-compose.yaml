@@ -14,7 +14,7 @@ services:
       - ./pip_cache:/root/.cache/pip           # Persist pip cache
     environment:
       - PYTHONUNBUFFERED=1
-      - HUGGINGFACE_HUB_TOKEN=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
+      - HUGGINGFACE_HUB_TOKEN=
       - TEXT_EMBED_MODEL=pritamdeka/BioBERT-mnli-snli-scinli-scitail-mednli-stsb
     depends_on:
       - ollama
