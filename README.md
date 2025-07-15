@@ -73,12 +73,12 @@ A modular, Dockerized Retrieval-Augmented Generation (RAG) system for medical im
 
 How Image search works on the app:
 
-![UI Screenshot](screenshots/MRAG Image Search 1.png)
-![UI Screenshot](screenshots/MRAG Image Search 2.png)
-![UI Screenshot](screenshots/MRAG Image Search 3.png)
-![UI Screenshot](screenshots/MRAG Image Search 4.png)
-![UI Screenshot](screenshots/MRAG Image Search 5.png)
-![UI Screenshot](screenshots/MRAG Image Search 6.png)
+![MRAG image search 1](screenshots/MRAG%20image%20search%201.png)
+![MRAG image search 2](screenshots/MRAG%20image%20search%202.png)
+![MRAG image search 3](screenshots/MRAG%20image%20search%203.png)
+![MRAG image search 4](screenshots/MRAG%20image%20search%204.png)
+![MRAG image search 5](screenshots/MRAG%20image%20search%205.png)
+![MRAG image search 6](screenshots/MRAG%20image%20search%206.png)
 
 
 
