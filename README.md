@@ -1,8 +1,7 @@
 # Medical Imaging RAG
 
-A modular, Dockerized Retrieval-Augmented Generation (RAG) system for medical imaging. This project enables semantic search and question-answering over DICOM files using state-of-the-art vision-language models and FAISS vector search, with a modern Streamlit UI and FastAPI backend.
+A modular, Dockerized Retrieval-Augmented Generation (RAG) system for medical imaging (a corpus of DICOM files). This project enables semantic search and question-answering over DICOM files using state-of-the-art vision-language models and FAISS vector search, with a modern Streamlit UI and FastAPI backend.
 
-Note that you have to create a folder called data and place your corpus of DICOM docs in there. 
 
 Check screenshots folder for screenshots!
 ---
